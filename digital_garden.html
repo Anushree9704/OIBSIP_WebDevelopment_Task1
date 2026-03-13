@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Garden — Anushree</title>
+    <style>
+        /* 1. Basic Setup */
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f9fbf9;
+            color: #333;
+        }
+
+        /* 2. Navigation */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: white;
+            border-bottom: 1px solid #eee;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #2d5a27;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #2d5a27;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            color: #4caf50;
+        }
+
+        /* 3. Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #e8f5e9;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #1b3318;
+        }
+        .hero p {
+            max-width: 500px;
+            margin: 12px auto 0;
+            color: #555;
+            font-size: 1rem;
+        }
+        .cta-btn {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 12px 24px;
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background 0.2s, transform 0.15s;
+        }
+        .cta-btn:hover {
+            background-color: #388e3c;
+            transform: translateY(-2px);
+        }
+
+        /* 4. Cards Grid */
+        .garden-container {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+            padding: 50px 5%;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #4caf50;
+        }
+        .card h3 {
+            margin-bottom: 8px;
+            color: #1b3318;
+        }
+        .card p {
+            font-size: 0.88rem;
+            color: #555;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+        .tag {
+            display: inline-block;
+            margin-top: 14px;
+            font-size: 0.78rem;
+            background: #f0f0f0;
+            padding: 4px 10px;
+            border-radius: 4px;
+            color: #666;
+            align-self: flex-start;
+        }
+        .tag.beginner    { background: #fef3e2; color: #a05c00; }
+        .tag.intermediate{ background: #e8f5e9; color: #2d6a30; }
+        .tag.ongoing     { background: #e3f2fd; color: #1a5276; }
+
+        /* 5. Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🌱 Digital Garden</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#garden">Skills & Projects</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="about">
+        <h1>Hi, I'm Anushree </h1>
+        <p>BCA student specialising in Data Science, with a passion for web development. I love learning new things, building projects, and growing a little every day.</p>
+        <a href="#garden" class="cta-btn">See My Work</a>
+    </header>
+
+    <section id="my digital garden" class="garden-container">
+
+        <div class="card">
+            <h3>About Me</h3>
+            <p>Pursuing BCA with a Data Science specialisation. Certified in Java and Cloud Computing (NPTEL) and Google Cloud. Always curious, always building.</p>
+            <span class="tag ongoing">Ongoing</span>
+        </div>
+
+        <div class="card">
+            <h3> Skills</h3>
+            <p>Python · SQL · HTML & CSS · Figma (basics) · Google Cloud · Java fundamentals. Comfortable with data, design, and a bit of everything in between.</p>
+            <span class="tag intermediate">Intermediate</span>
+        </div>
+
+        <div class="card">
+            <h3> Hackathon Project</h3>
+            <p>Participated in a hackathon and built a project under time pressure — a great experience in teamwork, problem-solving, and fast prototyping with Figma.</p>
+            <span class="tag beginner">Beginner</span>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <p>🌱 Anushree's Digital Garden · Growing one day at a time</p>
+    </footer>
+
+</body>
+</html>
